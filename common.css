@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'sagaksagak';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Beomdolee/sagaksagak.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'sagaksagak' !important;
+}
+
+body {
+    padding: 10px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -12,10 +27,14 @@ svg {
     height: 100%;
 }
 
-#div-todolist {
+#div-todolist-write {
     width: 400px;
     height: 600px;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 10px;
+    /* border: 2px solid black;
+    border-radius: 15px; */
+    padding: 30px 10px 10px 10px;
+}
+
+#text {
+    width: 330px;
 }
