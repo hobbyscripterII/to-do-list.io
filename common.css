@@ -9,6 +9,10 @@
     font-family: 'sagaksagak' !important;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     padding: 10px;
 }
@@ -28,13 +32,19 @@ svg {
 }
 
 #div-todolist-write {
-    width: 400px;
+    width: 500px;
     height: 600px;
-    /* border: 2px solid black;
-    border-radius: 15px; */
-    padding: 30px 10px 10px 10px;
+}
+
+#div-todolist-write, #div-todolist {
+    padding: 20px;
 }
 
 #text {
-    width: 330px;
+    width: 400px;
+    display: inline-block;
+}
+
+#btn-del {
+    margin-left: 10px;
 }
