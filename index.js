@@ -28,16 +28,12 @@ document.addEventListener('click', function(e) {
         const targetValue = target.innerText.replace('완료삭제', '');
         const parentNode = target.parentNode;
 
-        console.log(targetValue);
-
-        parentNode.removeChild(target);
-
-        // if(confirm(`${targetValue}을(를) 삭제하시겠습니까?`)) {
-        //     alert('할 일이 삭제되었습니다.');
-        //     parentNode.removeChild(target);
-        // } else {
-        //     alert('삭제가 취소되었습니다.');
-        // }
+        if(confirm(`${targetValue}을(를) 삭제하시겠습니까?`)) {
+            alert(`${targetValue}이 삭제되었습니다.`);
+            parentNode.removeChild(target);
+        } else {
+            alert('삭제가 취소되었습니다.');
+        }
     }
 
     if(e.target.id == 'btn-sus') {
@@ -45,12 +41,12 @@ document.addEventListener('click', function(e) {
         const target = e.target.parentNode;
         const targetValue = target.innerText.replace('완료삭제', '');
         const newText = document.createTextNode(targetValue);
-        const parentNode = target.parentNode;
-        const successTodolist = document.getElementById('ul-todolist-success');
-        
         newLi.appendChild(newText);
+        
+        const successTodolist = document.getElementById('ul-todolist-success');
         successTodolist.append(newLi);
         
+        const parentNode = target.parentNode;
         parentNode.removeChild(target);
     }
 });
