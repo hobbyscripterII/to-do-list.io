@@ -18,10 +18,10 @@ document.querySelector('#btn-save').addEventListener('click', function() {
 document.addEventListener('click', function(e) {
     if(e.target.id == 'btn-del') {
         const target = e.target.parentNode;
+        const targetValue = target.innerText.replace('삭제', '');
         const parentNode = target.parentNode;
-        const parentNodeValue = parentNode.innerText.replace('삭제', '');
         
-        if(confirm(`${parentNodeValue}을 삭제하시겠습니까?`)) {
+        if(confirm(`${targetValue}을(를) 삭제하시겠습니까?`)) {
             alert('할 일이 삭제되었습니다.');
             parentNode.removeChild(target);
         } else {
