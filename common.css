@@ -45,6 +45,20 @@ svg {
     display: inline-block;
 }
 
-#btn-del {
-    margin: 10px 0 0 10px;
+#btn-sus, #btn-del {
+    margin: 5px;
+}
+
+#ol-todolist, #ul-todolist-success {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    height: auto;
+}
+
+#ol-todolist > li, #ul-todolist-success > li {
+    margin-left: 15px;
+}
+
+#ul-todolist-success > li {
+    text-decoration: line-through;
 }
