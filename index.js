@@ -1,4 +1,4 @@
-const todolist = document.getElementById('ul-todolist');
+const todolist = document.getElementById('ol-todolist');
 
 document.querySelector('#btn-save').addEventListener('click', function() {
     // 노드 제어를 통한 동적 요소 생성
@@ -19,11 +19,9 @@ document.addEventListener('click', function(e) {
     if(e.target.id == 'btn-del') {
         const target = e.target.parentNode;
         const parentNode = target.parentNode;
-
-        console.log(target);
-        console.log(parentNode);
-
-        if(confirm('할 일을 삭제하시겠습니까?')) {
+        const parentNodeValue = parentNode.innerText.replace('삭제', '');
+        
+        if(confirm(`${parentNodeValue}을 삭제하시겠습니까?`)) {
             alert('할 일이 삭제되었습니다.');
             parentNode.removeChild(target);
         } else {

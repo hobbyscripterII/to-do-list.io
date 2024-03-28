@@ -31,12 +31,12 @@ svg {
     height: 100%;
 }
 
-#div-todolist-write {
+#div-todolist {
     width: 500px;
     height: 600px;
 }
 
-#div-todolist-write, #div-todolist {
+#div-todolist, #div-todolist {
     padding: 20px;
 }
 
