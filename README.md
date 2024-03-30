@@ -8,7 +8,7 @@
 > Javascript 'DOM & Node 제어' 공부 후 복습을 위해 만들었습니다. <br>
 
 ## 🛠️ URL
-<a href="https://hobbyscripterii.github.io/to-do-list.io/" target="_blank">해당 링크</a>를 클릭하시면 새 창이 열립니다.
+<a href="https://hobbyscripterii.github.io/to-do-list.io/" target="_blank">https://hobbyscripterii.github.io/to-do-list.io/</a>
 
 ## 🛠️ 주요 기술
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/></a>
